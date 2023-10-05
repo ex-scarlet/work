@@ -94,7 +94,7 @@ VMware에서 Oracle Linux 설치 방법(Custom 설치 진행)
 
 ![image](https://github.com/ex-scarlet/work/assets/58895345/9f5525c5-7b5e-4d0c-9a8d-9b07fe39dd1d)
 
-22. IPv4를 설정합니다. DNS주소는 192.168.~ 로 작성했고, 게이트웨이는 192.168.~.2로 작성했습니다.  
+22. IPv4를 설정합니다.  
     DNS 주소는 168.126.63.1(KT)로 작성했습니다.
 
 23. 다음으로 IPv6 설정에 들어가 Method 탭을 Ignore로 바꾸어줍니다.  
@@ -116,6 +116,18 @@ VMware에서 Oracle Linux 설치 방법(Custom 설치 진행)
 30. 부팅 후 터미널을 열어 uname -a와 cat /etc/redhat-release 를 입력해 알맞은 버전이 설치가 잘 되었는지 확인합니다.
 
 ![image](https://github.com/ex-scarlet/work/assets/58895345/07d5a97f-da89-45e1-a2e5-4106554612e0)
+
+31. Library에 설치해둔 Oracle Linux를 우클릭한 후 settings에 들어갑니다.
+
+![image](https://github.com/ex-scarlet/work/assets/58895345/424c8a12-b0c6-4a0a-9fdf-3ac04adbd36a)
+
+32. Network Adapter에 들어가 Network connection을 Bridged로 변경합니다.
+
+![image](https://github.com/ex-scarlet/work/assets/58895345/a70834f3-0a20-4e71-b242-0831e7359f67)
+
+33. 터미널을 연 후 ping 8.8.8.8을 입력하여 핑이 잘 가는지 확인한다.
+
+34. 이후 정적 IP 설정을 위해 OS 네트워크 설정에 들어간 후 겹치지 않도록 임의의 IP로 작성 후 저장합니다.
 
 
     
