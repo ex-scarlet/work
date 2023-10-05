@@ -84,6 +84,40 @@ VMware에서 Oracle Linux 설치 방법(Custom 설치 진행)
 
 ![image](https://github.com/ex-scarlet/work/assets/58895345/c443cf32-f8d9-4c38-a0f2-c6000ea24b51)
 
+19. 변경사항을 적용합니다.
+
+20. NETWORK & HOST NAME, HOSTNAME 설정 후 Configure 선택합니다.
+
+![image](https://github.com/ex-scarlet/work/assets/58895345/778d4b71-75a0-49db-acde-13e118999647)
+
+21. General(일반) 에서 Connect automatically with priority, All user may connect to this network칸에 체크합니다.
+
+![image](https://github.com/ex-scarlet/work/assets/58895345/9f5525c5-7b5e-4d0c-9a8d-9b07fe39dd1d)
+
+22. IPv4를 설정합니다. DNS주소는 192.168.~ 로 작성했고, 게이트웨이는 192.168.~.2로 작성했습니다.  
+    DNS 주소는 168.126.63.1(KT)로 작성했습니다.
+
+23. 다음으로 IPv6 설정에 들어가 Method 탭을 Ignore로 바꾸어줍니다.  
+    가끔 네트워크 문제가 생긴다고 합니다.
+
+24. 설정 완료 후 네트워크를 킨 후 네트워크 설정을 마칩니다.
+
+25. 다음으로, SECURITY POLICY는 OFF로 설정해줍니다.
+    초기에 서버를 설정할 때 작업에 지장이 생길 수 있다고 합니다.
+
+26. root 비밀번호 설정 및 유저 계정을 작성합니다.
+
+27. 작성이 완료되면 설치를 시작합니다.
+
+28. 설치 완료 후 OS 재부팅을 해줍니다.
+
+29. 재부팅 후 라이센스 약관에 동의합니다.
+
+30. 부팅 후 터미널을 열어 uname -a와 cat /etc/redhat-release 를 입력해 알맞은 버전이 설치가 잘 되었는지 확인합니다.
+
+![image](https://github.com/ex-scarlet/work/assets/58895345/07d5a97f-da89-45e1-a2e5-4106554612e0)
+
+
     
 
 
