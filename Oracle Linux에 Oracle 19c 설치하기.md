@@ -35,7 +35,7 @@ Oracle 19c 설치 전 해야 할 일
 
 4. selinux를 permissive 설정합니다.
    
-   [root@oel7 ~]# vi /etc/selinux/config
+   [root@oel7 ~]# vi /etc/selinux/config  
    ![image](https://github.com/ex-scarlet/work/assets/58895345/9503660c-3f89-4745-8248-86124f7c6889)
 
 5. 방화벽을 해제합니다
