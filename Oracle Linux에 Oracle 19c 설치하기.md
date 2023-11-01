@@ -77,7 +77,7 @@ Oracle 19c 설치 전 해야 할 일
 
 9. 이제 설치파일 압축을 해제합니다.
 
-   $ cd $ORACLE_HOME
+   $ cd __$ORACLE_HOME__
    $ unzip LINUX.X64_193000_db_home.zip
 
 10. 압축 해제가 완료되면 다시 루트로 돌아가 xhost + 명령어를 실행해줍니다
