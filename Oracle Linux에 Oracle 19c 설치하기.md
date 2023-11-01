@@ -56,7 +56,8 @@ Oracle 19c 설치 전 해야 할 일
 
 8. 앞에서 만든 oracle 계정으로 접속 후 .bash_profile 파일 수정
 
-   # su - oracle  
+   su - oracle 입력
+   
    $ vi .bash_profile  
    export TMP=/tmp  
    export TMPDIR=$TMP
@@ -75,25 +76,25 @@ Oracle 19c 설치 전 해야 할 일
  
    export DISPLAY=192.168.~.1:0.0  
 
-9. 이제 설치파일 압축을 해제합니다.
+10. 이제 설치파일 압축을 해제합니다.
 
    $ cd __$ORACLE_HOME__  
    $ unzip LINUX.X64_193000_db_home.zip
 
-10. 압축 해제가 완료되면 다시 루트로 돌아가 xhost + 명령어를 실행해줍니다
+11. 압축 해제가 완료되면 다시 루트로 돌아가 xhost + 명령어를 실행해줍니다
 
     ![image](https://github.com/ex-scarlet/work/assets/58895345/cf00cc58-6a0b-4e65-8e19-e5155082ee82)
 
     그리고 xdpyinfo를 입력하여 정상 출력이 되는지 확인합니다.
     오류가 난다면, __export DISPLAY=:0.0__ 을 입력한 후 다시 xhost + 부터 입력합니다.
 
-11. 그리고 su - oracle을 이용해 oracle 계정에 접속, cd $ORACLE_HOME을 이용하여 runInstaller 파일이 있는 곳에 접속합니다.
+12. 그리고 su - oracle을 이용해 oracle 계정에 접속, cd $ORACLE_HOME을 이용하여 runInstaller 파일이 있는 곳에 접속합니다.
 
-12. 여기서도 루트에서 한 것처럼 __export DISPLAY=:0.0__ 을 입력한 후 xhost + 명령어를 실행합니다.
+13. 여기서도 루트에서 한 것처럼 __export DISPLAY=:0.0__ 을 입력한 후 xhost + 명령어를 실행합니다.
 
     ![image](https://github.com/ex-scarlet/work/assets/58895345/7cd6722c-8c03-457d-9319-2c873989f5d4)
 
-13. 그리고 ./runInstaller 을 입력하면 Oracle 19c 설치 화면이 나옵니다.
+14. 그리고 ./runInstaller 을 입력하면 Oracle 19c 설치 화면이 나옵니다.
 
     ![image](https://github.com/ex-scarlet/work/assets/58895345/1e8e0721-e87a-4319-84eb-b47af99bed80)
 
