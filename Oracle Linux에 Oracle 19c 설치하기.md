@@ -56,24 +56,24 @@ Oracle 19c 설치 전 해야 할 일
 
 8. 앞에서 만든 oracle 계정으로 접속 후 .bash_profile 파일 수정
 
-   # su - oracle
-   $ vi .bash_profile
-   export TMP=/tmp
+   # su - oracle  
+   $ vi .bash_profile  
+   export TMP=/tmp  
    export TMPDIR=$TMP
  
-   export ORACLE_HOSTNAME=oel7
-   export ORACLE_UNQNAME=oracle19
-   export ORACLE_BASE=/ORA19/app/oracle
-   export ORACLE_HOME=$ORACLE_BASE/product/19.0.0/db_1
-   export ORA_INVENTORY=/ORA19/oraInventory
-   export ORACLE_SID=oracle19
-   export DATA_DIR=/ORA19/app/oradata
-   export PATH=/usr/sbin:/usr/local/bin:$PATH
-   export PATH=$ORACLE_HOME/bin:$PATH
-   export LD_LIBRARY_PATH=$ORACLE_HOME/lib:/lib:/usr/lib
-   export CLASSPATH=$ORACLE_HOME/jlib:$ORACLE_HOME/rdbms/jlib
+   export ORACLE_HOSTNAME=oel7  
+   export ORACLE_UNQNAME=oracle19  
+   export ORACLE_BASE=/ORA19/app/oracle  
+   export ORACLE_HOME=$ORACLE_BASE/product/19.0.0/db_1  
+   export ORA_INVENTORY=/ORA19/oraInventory  
+   export ORACLE_SID=oracle19  
+   export DATA_DIR=/ORA19/app/oradata  
+   export PATH=/usr/sbin:/usr/local/bin:$PATH  
+   export PATH=$ORACLE_HOME/bin:$PATH  
+   export LD_LIBRARY_PATH=$ORACLE_HOME/lib:/lib:/usr/lib  
+   export CLASSPATH=$ORACLE_HOME/jlib:$ORACLE_HOME/rdbms/jlib  
  
-   export DISPLAY=192.168.~.1:0.0
+   export DISPLAY=192.168.~.1:0.0  
 
 9. 이제 설치파일 압축을 해제합니다.
 
